@@ -6,7 +6,7 @@ export default function Footer({ year }: FooterProps) {
       <div className="container max-w-screen-lg mx-auto text-white px-4 md:px-0 py-14 ">
         <div className="flex flex-col md:flex-row md:space-y-0 md:justify-between md:items-start">
           <nav className="flex items-center md:items-start flex-col">
-            <img src="../src/assets/logo.svg" />
+            <img src="../src/assets/logo.svg" alt="footer-logo" />
 
             <nav className="flex flex-col md:flex-row space-y-8 mt-8 md:space-y-0 md:py-4 md:mt-0">
               <a href="#" className="font-bold md:mr-6 hover:underline ">
@@ -25,7 +25,11 @@ export default function Footer({ year }: FooterProps) {
           </nav>
 
           <div className="flex items-center justify-center md:items-start flex-col space-y-3 mt-10">
-            <nav className="flex ">
+            <nav
+              className="flex"
+              data-testid="desktop-footer-menu"
+              id="desktop-footer-menu"
+            >
               <div className="h-8 pr-2">
                 <a href="#" className="font-bold md:mr-6 hover:underline ">
                   <img className="h-6" src="../src/assets/icon-facebook.svg" />

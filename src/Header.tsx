@@ -14,9 +14,12 @@ export default function Header() {
     >
       <div className="container max-w-screen-lg mx-auto md:flex flex-col text-white px-8 py-14">
         <nav className="flex items-center justify-between">
-          <img src="../src/assets/logo.svg" />
-
-          <nav className="md:flex hidden" id="desktop-menu">
+          <img src="../src/assets/logo.svg" alt="loopstudio logo" />
+          <nav
+            className="md:flex hidden"
+            data-testid="desktop-menu"
+            id="desktop-menu"
+          >
             <a href="#" className="font-bold mr-6 hover:underline ">
               Home
             </a>

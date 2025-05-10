@@ -51,7 +51,10 @@ export default function Creations() {
           <button className="btn uppercase hidden md:block">See all</button>
         </div>
 
-        <div className="grid grid-rows-2 grid-cols-1 md:grid-cols-4 gap-8">
+        <div
+          className="grid grid-rows-2 grid-cols-1 md:grid-cols-4 gap-8"
+          data-testid="desktop-images-container"
+        >
           {creations.map((creation, index) => (
             <div key={index} className="relative group item">
               <img
